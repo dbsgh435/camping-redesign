@@ -1,16 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>지리산 반내골 캠핑장</title>
-    <!-- CSS only -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-</head>
-<body>
-    <h1>부트 스트랩 추가</h1>
-    <!-- JavaScript Bundle with Popper -->
+    <!--bxslider CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <title>지리산 반내골 오토캠핑장</title>
+    <style>
+        .container-wrap {
+            padding: 0;
+        }
+        .bx-wrapper {
+            border: none;
+        }
+        .blind {
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class="d-none">지리산 반내골 오토캠핑장</h1>
+        <!-- <div class="container">
+            default container test
+          </div> -->
+          <div class="container-wrap">
+              <div class="slider">
+                <div>
+                    <img src="https://picsum.photos/1920/800" alt="dummy">
+                </div>
+                <div>
+                    <img src="https://picsum.photos/1920/800" alt="dummy">
+                </div>
+              </div>
+          </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-</body>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+              pager : false
+          });
+        });
+    </script>
+  </body>
 </html>
