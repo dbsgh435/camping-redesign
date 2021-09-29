@@ -31,7 +31,6 @@ body {
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: -1;
   }
   .h-600 {
     height: 600px;
@@ -39,4 +38,8 @@ body {
   h4 i {
     margin-right: 10px;
     font-size: 30px;
+  }
+  #reviewer {
+    width: 40px;
+    height: 40px;
   }

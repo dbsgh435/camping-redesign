@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--bxslider CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <!--부트스트랩 CDN-->
+    <!--부트스트랩 아이콘 CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -27,7 +27,7 @@
           <header>
             <div class="container-fluid">
               <div class="container h-600">
-                <div class="row align-items-center">
+                <div class="row align-items-center sticky-top">
                   <div class="logo col-md-3"><img class="img-fluid" src="images/logo.png" alt="로고 이미지"></div>
                   <nav class="col-md-9">
                     <ul id="gnb">
@@ -43,10 +43,10 @@
               <div class="slider-wrap">
                 <div class="slider">
                   <div>
-                      <img src="https://picsum.photos/1920/600" alt="dummy">
+                      <img src="https://picsum.photos/id/1036/1920/600" alt="dummy">
                   </div>
                   <div>
-                      <img src="https://picsum.photos/1920/600" alt="dummy">
+                      <img src="https://picsum.photos/id/1039/1920/600" alt="dummy">
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@
                       <p>지리산 반내골 오토 캠핑장은 구례 문척면 중산리
                         계곡 상류에 위치하여 산과 시냇물이 어우러진
                         물맑고 조용한 자연오토캠핑장 입니다.</p>
-                        <button type="button" class="btn btn-dark rounded-pill">more</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill">Dark</button>
                     </div>
                     <div class="col-12 col-sm-4">
                       <h4><i class="bi bi-building"></i>부대시설</h4>
@@ -71,7 +71,7 @@
                         객실 외부에서 사용 할 수 있는 남녀 화장실과
                         따뜻한 온수가 나오는 남녀 샤워실이 별도로 갖춰져 있어,
                         손님들께 불편함이 없도록 하였습니다.</p>
-                        <button type="button" class="btn btn-dark rounded-pill">more</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill">Dark</button>
                     </div>
                     <div class="col-12 col-sm-4">
                       <h4><i class="bi bi-info-circle-fill"></i>주변시설 및 산책로</h4>
@@ -80,7 +80,7 @@
                         다슬기 체험을 할 수 있습니다.
                         또한 단체 워크샵을 진행할 수 있도록 별도의 세미나실이
                         준비되어 있습니다.</p>
-                        <button type="button" class="btn btn-dark rounded-pill">more</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill">Dark</button>
                     </div>
                   </div>
                 </article>
@@ -88,12 +88,56 @@
                   <h1 class="d-none">캠핑장 예약 조회</h1>
                   <div class="container">
                     <div class="row">
-                      <hgroup class="col-8">
+                      <hgroup class="col-10">
                         <h4>물 맑고 조용한 지리산</h4>
                         <h5>자연 오토캠핑장</h5>
                       </hgroup>
-                      <div class="col-4">
-                        <button type="button" class="btn btn-dark rounded-pill">more</button>
+                      <div class="col-2">
+                        <button type="button" class="btn btn-dark rounded-pill btn-lg">예약 / 조회</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="card-group gap-5">
+                        <div class="card border-0">
+                          <img src="http://picsum.photos/id/1003/300/300" class="card-img-top" alt="카드 이미지">
+                          <div class="card-body px-0">
+                            <h5 class="card-title">카라반</h5>
+                            <p class="card-text">캠핑에 필요한 모든 시설이 갖춰진, 편리한 오토캠핑</p>
+                            <hr>
+                            <div class="card-review d-flex justify-content-between align-items-center">
+                              <figure id="reviewer" class="rounded-circle overflow-hidden">
+                                <figcaption><img class="img-fluid" src="https://images.generated.photos/vf4EbFkqsd1nRnawWSzEXfeX3lXYMSOuEm9QbyF-oKw/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTkxNjk5LmpwZw.jpg"></figcaption>
+                              </figure>
+                              <div id="score">
+                                ★★★★☆
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card border-0">
+                          <img src="http://picsum.photos/id/1022/300/300" class="card-img-top" alt="카드 이미지">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card border-0">
+                          <img src="http://picsum.photos/id/1005/300/300" class="card-img-top" alt="카드 이미지">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card border-0">
+                          <img src="http://picsum.photos/id/1006/300/300" class="card-img-top" alt="카드 이미지">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
