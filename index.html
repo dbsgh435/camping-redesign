@@ -23,10 +23,30 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!--modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">오시는 길</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>지리산 증심사에 동쪽으로 30미터 부근</p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13046.727411530397!2d126.8789327!3d35.1645544!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1633074584481!5m2!1sko!2skr" class="img-fluid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+            <button type="button" class="btn btn-primary">복사하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
     <h1 class="d-none">지리산 반내골 오토캠핑장</h1>
           <header>
-            <div class="container-fluid">
-              <div class="container h-600">
+            <div class="container-fluid h-600">
+              <div class="container ">
                 <div class="row align-items-center sticky-top">
                   <div class="logo col-md-3"><img class="img-fluid" src="images/logo.png" alt="로고 이미지"></div>
                   <nav class="col-md-9">
@@ -62,7 +82,7 @@
                       <p>지리산 반내골 오토 캠핑장은 구례 문척면 중산리
                         계곡 상류에 위치하여 산과 시냇물이 어우러진
                         물맑고 조용한 자연오토캠핑장 입니다.</p>
-                        <button type="button" class="btn btn-outline-dark rounded-pill">Dark</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">더보기</button>
                     </div>
                     <div class="col-12 col-sm-4">
                       <h4><i class="bi bi-building"></i>부대시설</h4>
@@ -85,7 +105,7 @@
                   </div>
                 </article>
                 <article>
-                  <h1 class="d-none">캠핑장 예약 조회</h1>
+                  <h3 class="d-none">캠핑장 예약 조회</h3>
                   <div class="container">
                     <div class="row">
                       <hgroup class="col-10">
@@ -117,31 +137,116 @@
                         <div class="card border-0">
                           <img src="http://picsum.photos/id/1022/300/300" class="card-img-top" alt="카드 이미지">
                           <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                        <div class="card border-0">
-                          <img src="http://picsum.photos/id/1005/300/300" class="card-img-top" alt="카드 이미지">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">카라반</h5>
+                            <p class="card-text">캠핑에 필요한 모든 시설이 갖춰진, 편리한 오토캠핑</p>
+                            <hr>
+                            <div class="card-review d-flex justify-content-between align-items-center">
+                              <figure id="reviewer" class="rounded-circle overflow-hidden">
+                                <figcaption><img class="img-fluid" src="https://images.generated.photos/vf4EbFkqsd1nRnawWSzEXfeX3lXYMSOuEm9QbyF-oKw/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTkxNjk5LmpwZw.jpg"></figcaption>
+                              </figure>
+                              <div id="score">
+                                ★★★★☆
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="card border-0">
                           <img src="http://picsum.photos/id/1006/300/300" class="card-img-top" alt="카드 이미지">
                           <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">카라반</h5>
+                            <p class="card-text">캠핑에 필요한 모든 시설이 갖춰진, 편리한 오토캠핑</p>
+                            <hr>
+                            <div class="card-review d-flex justify-content-between align-items-center">
+                              <figure id="reviewer" class="rounded-circle overflow-hidden">
+                                <figcaption><img class="img-fluid" src="https://images.generated.photos/vf4EbFkqsd1nRnawWSzEXfeX3lXYMSOuEm9QbyF-oKw/rs:fit:512:512/wm:0.95:sowe:18:18:0.33/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTkxNjk5LmpwZw.jpg"></figcaption>
+                              </figure>
+                              <div id="score">
+                                ★★★★☆
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </article>
+                <article class="my-5">
+                  <h3 class="text-center">시설소개</h3>
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-4  text-light">
+                        <img src="https://picsum.photos/1000" class="img-fluid" alt="dummy">
+                      </div>
+                      <div class="col-4  text-light">
+                        <div class="grid gap-4">
+                            <div><img src="https://picsum.photos/id/294/500" class="img-fluid" alt="dummy"></div>
+                            <div><img src="https://picsum.photos/id/28/500" class="img-fluid" alt="dummy"></div>
+                            <div><img src="https://picsum.photos/id/93/500" class="img-fluid" alt="dummy"></div>
+                            <div><img src="https://picsum.photos/id/193/500" class="img-fluid" alt="dummy"></div>
+                        </div>
+                      </div>
+                      <div class="col-4  text-light">
+                        <img src="https://picsum.photos/1000" class="img-fluid" alt="dummy">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article>
+                  <h3 class="text-center">주변관광지</h3>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3">
+                        <img src="https://picsum.photos/1000/500"  class="img-fluid" alt="dummy">
+                      </div>
+                      <div class="col-3">
+                        <img src="https://picsum.photos/1000/500"  class="img-fluid" alt="dummy">
+                      </div>
+                      <div class="col-3">
+                        <img src="https://picsum.photos/1000/500"  class="img-fluid" alt="dummy">
+                      </div>
+                      <div class="col-3">
+                        <img src="https://picsum.photos/1000/500"  class="img-fluid" alt="dummy">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <aside>
+                  <div class="container">
+                    <div class="row justify-content-center text-center">
+                      <div class="col-2">
+                       <input name="" id="" class="btn btn-dark my-5 px-5" type="button" value="TOP">
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <footer>
+                  <div class="container-fluid bg-primary text-light">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-3">
+                           <a href="#">
+                             <img src="images/logo.png" class="img-fluid" alt="지리산 반내골 오토캠핑">
+                           </a>     
+                        </div>
+                        <div class="col-7">
+                          <p>상호 : 지리산반내골오토캠핑 대표 유노윤호</p>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptates veniam obcaecati quasi sunt, inventore iure alias illo minus error exercitationem totam provident, placeat nobis maxime ipsa dolorum quo modi!</p>
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptates veniam obcaecati quasi sunt, inventore iure alias illo minus error exercitationem totam provident, placeat nobis maxime ipsa dolorum quo modi!</p>
+                        </div>
+                        <div class="col-2">
+                          <ul>
+                            <li>
+                              아이콘1
+                            </li>
+                            <li>
+                              아이콘2
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
               </div>
             </div>
           </section>
